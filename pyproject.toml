@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sunnygout-arith"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别模型的简单算术的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "sunnygout" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://sunnygout.github.io"
+Repository = "https://github.com/sunnygout/arith"
+Issues = "https://github.com/sunnygout/arith/issues"
+
+[project.scripts]
+arith = "arith:main"
+
+[tool.setuptools]
+py-modules = ["arith"]
